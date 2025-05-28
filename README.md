@@ -15,6 +15,24 @@ This is a single-page web application that allows users to manage their tasks. I
 *   **Persistent Storage:** User and task data is stored in a MySQL database.
 *   **Token-based Authentication:** Secure access to task management features using JSON Web Tokens (JWT).
 
+## Quick Start
+
+This section provides a brief overview of the steps to get the application running. For detailed instructions, please refer to the "Setup and Running" section below.
+
+1.  **Database Setup:**
+    *   Ensure MySQL is running.
+    *   Create a database (e.g., `task_manager_db`).
+    *   Create tables using `backend/database_schema.sql`. (See details below)
+2.  **Backend Setup:**
+    *   Navigate to `cd backend`.
+    *   Create and configure your `backend/.env` file with database credentials and JWT secret. (See template below)
+    *   Install dependencies: `npm install`.
+    *   Run the server: `npm start` (or `node server.js`). Expected to run on `http://localhost:3000`.
+3.  **Frontend Usage:**
+    *   Open `index.html` in the root project directory in your web browser.
+
+*For detailed instructions, especially for database setup and `.env` configuration, please see the full "Setup and Running" section.*
+
 ## Project Structure
 
 The project is organized as follows:
