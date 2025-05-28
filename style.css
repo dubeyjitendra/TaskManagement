@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+#login-section, #task-section {
+  background-color: #fff;
+  padding: 20px;
+  margin: 0 auto;
+  width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#login-section {
+  text-align: center;
+}
+
+#task-section {
+  display: none; /* Initially hidden */
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+}
+
+input[type="text"], input[type="password"] {
+  width: calc(100% - 22px); /* Account for padding and border */
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #5cb85c;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #4cae4c;
+}
+
+#login-error {
+  color: red;
+  margin-top: 10px;
+}
+
+#task-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#task-list li {
+  background-color: #eee;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  display: flex; /* To align buttons on the same line */
+  justify-content: space-between; /* Space out text and buttons */
+  align-items: center; /* Vertically align items */
+}
+
+#task-list li:last-child {
+  border-bottom: none;
+}
+
+#task-list li button {
+  background-color: #d9534f; /* Red for delete */
+  font-size: 12px;
+  padding: 5px 10px;
+}
+
+#task-list li button:first-of-type { /* Edit button */
+  background-color: #f0ad4e; /* Orange for edit */
+  margin-right: 5px;
+}
+
+#task-list li button:hover {
+  opacity: 0.8;
+}
