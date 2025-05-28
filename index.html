@@ -6,18 +6,34 @@
 </head>
 <body>
   <script src="script.js" defer></script>
+
+  <div id="api-error-display" style="color: red; text-align: center; margin-bottom: 10px;"></div>
+
   <div id="login-section">
     <h1>Login</h1>
-    <input type="text" id="username" placeholder="Username">
-    <input type="password" id="password" placeholder="Password">
+    <input type="text" id="login-username" placeholder="Username" autocomplete="username">
+    <input type="password" id="login-password" placeholder="Password" autocomplete="current-password">
     <button id="login-button">Login</button>
-    <p id="login-error"></p>
+    <p id="login-error" class="form-error"></p>
+    <p>Don't have an account? <a href="#" id="show-register-link">Register here</a></p>
+  </div>
+
+  <div id="register-section" style="display: none;">
+    <h1>Register</h1>
+    <input type="text" id="register-username" placeholder="Username" autocomplete="username">
+    <input type="password" id="register-password" placeholder="Password" autocomplete="new-password">
+    <button id="register-button">Register</button>
+    <p id="register-error" class="form-error"></p>
+    <p>Already have an account? <a href="#" id="show-login-link">Login here</a></p>
   </div>
 
   <div id="task-section">
     <h1>Task Manager</h1>
+    <button id="logout-button" style="float: right; background-color: #f0ad4e;">Logout</button>
+    <div style="clear: both;"></div>
     <input type="text" id="task-input" placeholder="Enter a new task">
     <button id="add-task-button">Add Task</button>
+    <p id="task-form-error" class="form-error"></p>
     <ul id="task-list"></ul>
   </div>
 </body>

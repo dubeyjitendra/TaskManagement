@@ -18,6 +18,10 @@ body {
   text-align: center;
 }
 
+#register-section {
+  display: none; /* Initially hidden */
+}
+
 #task-section {
   display: none; /* Initially hidden */
 }
